@@ -36,7 +36,7 @@ Ejemplo básico de uso:
 int fd;
 char *line;
 
-fd = open("file.txt", O_RDONLY);
+fd = open("test.txt", O_RDONLY);
 while ((line = get_next_line(fd)) != NULL)
 {
     printf("%s", line);
@@ -135,7 +135,7 @@ int main(void)
 	int fd;
 	char *line;
 
-	fd = open("big.txt", O_RDONLY);
+	fd = open("test.txt", O_RDONLY);
 	if (fd < 0)
 		return (1);
 	line = get_next_line(fd);
